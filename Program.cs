@@ -10,14 +10,20 @@ namespace ConsoleApp18
     {
         static void Main(string[] args)
         {
-            //создание объекта класса Person
-            Person person = new Person();
-            //устанавливаем новые значения полей
-            person.Name = "Наталья";
-            person.Surname = "Шандригоз";
-            person.Age = 18;
-            //обращаемся к методу Print
-            person.Print();
+            Address address = new Address();
+            int Index = address.Index;
+            string Country = address.Country;
+            string City = address.City;
+            int House = address.House;
+            int Apartament = address.Apartament;
+            Console.WriteLine($"Индекс: {Index}\nСтрана:{Country}\nГород: {City}\nДом: {House}\nКвартира: {Apartament}\n\n");
+
+            address.Index = 5932;
+            address.Country = "Russia";
+            address.City = "Moscow";
+            address.House = 23;
+            address.Apartament = 8;
+            address.Print();
         }
     }
 }
