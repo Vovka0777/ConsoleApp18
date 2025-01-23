@@ -3,32 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
-namespace ConsoleApp18
+namespace ConsoleApp18_1
 {
-    /// <summary>
-    /// Класс Личность
-    /// </summary>
-    internal class Person
+    internal class Address
     {
-        /// <summary>
-        /// Имя
-        /// </summary>
-        public string Name;
-        /// <summary>
-        /// Фамилия
-        /// </summary>
-        public string Surname;
-        /// <summary>
-        /// Возраст
-        /// </summary>
-        public int Age;
-        /// <summary>
-        /// Метод вывода значений в консоль
-        /// </summary>
+        public int Index=4367;
+        public string Country="Paris";
+        public string City="London";
+        public int House=54;
+        public int Apartament=2;
         public void Print()
         {
-            Console.WriteLine($"Имя:{Name}\nФамилия:{Surname}\nВозраст:{Age}");
+            Console.WriteLine($"Индекс: {Index}\nСтрана:{Country}\nГород: {City}\nДом: {House}\nКвартира: {Apartament}");
         }
     }
 }
